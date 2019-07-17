@@ -5,6 +5,7 @@ import React from 'react';
 import {Picker} from 'react-native';
 import NativeBaseComponent from '../Base/NativeBaseComponent';
 import computeProps from '../../Utils/computeProps';
+import createReactClass from 'create-react-class';
 
 export default class PickerNB extends NativeBaseComponent {
     
@@ -39,7 +40,7 @@ export default class PickerNB extends NativeBaseComponent {
 
 }
 
-PickerNB.Item = React.createClass({
+PickerNB.Item = createReactClass({
 
     render: function() {
         return(

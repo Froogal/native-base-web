@@ -16,6 +16,7 @@ import Button from './Button';
 import Header from './Header';
 import Title from './Title';
 import _ from 'lodash';
+import createReactClass from 'create-react-class';
 
 export default class PickerNB extends NativeBaseComponent {
 
@@ -98,7 +99,7 @@ export default class PickerNB extends NativeBaseComponent {
 
 }
 
-PickerNB.Item = React.createClass({
+PickerNB.Item = createReactClass({
 
     render: function() {
         return(
